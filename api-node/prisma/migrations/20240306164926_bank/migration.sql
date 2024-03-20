@@ -1,0 +1,60 @@
+-- CreateTable
+CREATE TABLE "notes" (
+    "id" TEXT NOT NULL,
+    "archdiocese" TEXT NOT NULL,
+    "city" TEXT NOT NULL,
+    "parish" TEXT NOT NULL,
+    "hisName" TEXT NOT NULL,
+    "hisNickname" TEXT NOT NULL,
+    "hisBirthdate" TEXT NOT NULL,
+    "hisProfission" TEXT NOT NULL,
+    "hisReligion" TEXT NOT NULL,
+    "herName" TEXT NOT NULL,
+    "herNickname" TEXT NOT NULL,
+    "herBirthdate" TEXT NOT NULL,
+    "herProfission" TEXT NOT NULL,
+    "herReligion" TEXT NOT NULL,
+    "marriageReligious" BOOLEAN NOT NULL,
+    "whichParish" TEXT NOT NULL,
+    "address" TEXT NOT NULL,
+    "district" TEXT NOT NULL,
+    "cep" TEXT NOT NULL,
+    "cityState" TEXT NOT NULL,
+    "parishAddress" TEXT NOT NULL,
+    "addressNumber" TEXT NOT NULL,
+    "phoneNumber" TEXT NOT NULL,
+    "dateWedding" TEXT NOT NULL,
+    "numberOfChildren" TEXT NOT NULL,
+    "engagementParish" TEXT NOT NULL,
+    "habilities" TEXT NOT NULL,
+    "apartmentNumber" TEXT,
+    "hisProfessionalAddress" TEXT,
+    "hisProfessionalPhoneNumber" TEXT,
+    "herProfessionalAddress" TEXT,
+    "herProfessionalPhoneNumber" TEXT,
+    "numberFirstStep" TEXT,
+    "dateFirstStep" TEXT,
+    "localFirstStep" TEXT,
+    "activitiesFirstStage" TEXT,
+    "numberSecondStep" TEXT,
+    "dateSecondStep" TEXT,
+    "localSecondStep" TEXT,
+    "activitiesSecondStage" TEXT,
+    "numberThirdStep" TEXT,
+    "dateThirdStep" TEXT,
+    "localThirdStep" TEXT,
+    "activitiesThirdStage" TEXT,
+    "hisPhotoKey" TEXT,
+    "herPhotoKey" TEXT,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "notes_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "pastorals" (
+    "id" TEXT NOT NULL,
+    "name" TEXT NOT NULL,
+
+    CONSTRAINT "pastorals_pkey" PRIMARY KEY ("id")
+);

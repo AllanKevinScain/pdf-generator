@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-y{
+    @apply overflow-y-scroll
+}
+.scrollbar-y::-webkit-scrollbar-thumb {
+    @apply bg-gray-300;
+    @apply rounded-[3.125rem];
+    @apply z-[10];
+}
+
+.scrollbar-y::-webkit-scrollbar-track {
+    @apply bg-gray-700;
+    @apply opacity-[0.2];
+    @apply rounded-[3.125rem];
+    @apply my-14;
+    @apply z-[10];
+}
+
+.scrollbar-y::-webkit-scrollbar {
+    @apply w-[0.375rem];
+    @apply opacity-[0.2];
+    @apply z-[10];
+}
